@@ -53,5 +53,3 @@ class Student:
 
 
 students_list = []
-
-

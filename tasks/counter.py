@@ -18,6 +18,7 @@
 - метод __next__
 """
 
+
 class Counter:
     value: int
 

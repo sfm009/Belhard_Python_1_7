@@ -16,15 +16,18 @@
     random.randint(-n, n)
 - метод print_seq, который выводит последовательность на экран
 """
+import random
 from random import randint
 
 
 class RandSequence:
-    n = 0
+    n: int
     sequence = []
 
     def __init__(self, n):
         self.n = n
+        for i in range(self.n):
+            self.sequence.append(random.uniform(-self.n, self.n))
 
     def generate(self):
         for i in range(self.n):

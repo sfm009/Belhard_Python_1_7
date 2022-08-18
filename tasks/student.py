@@ -52,12 +52,11 @@ class Student:
         return self.average_score >= other
 
 
-students_list = []
+student_list = [Student('James', 'Lebron', 23, 5.0),
+        Student('Curry', 'Stephen', 30, 10.0),
+        Student('Durant', 'Kevin', 7, 4.0),
+        Student('Tatum', 'Jayson', 0, 8.0),
+        Student('Embiid', 'Joel', 21, 9.0)]
 
-
-student_1 = Student()
-
-
-for i in students_list:
-    if i.average_score > 5:
-        print(i)
+print(student_list.sort(key=lambda x: x.average_score))
+print(student_list.sort(key=lambda x: x.average_score, reverse=True))

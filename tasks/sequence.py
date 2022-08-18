@@ -26,12 +26,14 @@ class RandSequence:
 
     def __init__(self, n):
         self.n = n
-        for i in range(self.n):
-            self.sequence.append(random.uniform(-self.n, self.n))
+        self.sequence = [random.uniform(-self.n, self.n) for i in range(self.n)]
+        # for i in range(self.n):
+        #     self.sequence.append(random.uniform(-self.n, self.n))
 
-    def generate(self):
-        for i in range(self.n):
-            self.sequence.append(randint(-self.n, self.n))
+    def generate(self, n=None):
+        if not n:
+            n = self.n
+        self.sequence = [random.uniform(-n, n) for i in range(n)]
 
     @classmethod
     def print_seq(cls, sequence):

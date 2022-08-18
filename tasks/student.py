@@ -53,3 +53,11 @@ class Student:
 
 
 students_list = []
+
+
+student_1 = Student()
+
+
+for i in students_list:
+    if i.average_score > 5:
+        print(i)

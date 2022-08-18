@@ -17,7 +17,7 @@
 - метод print_seq, который выводит последовательность на экран
 """
 import random
-from random import randint
+
 
 
 class RandSequence:
@@ -27,8 +27,6 @@ class RandSequence:
     def __init__(self, n):
         self.n = n
         self.sequence = [random.uniform(-self.n, self.n) for i in range(self.n)]
-        # for i in range(self.n):
-        #     self.sequence.append(random.uniform(-self.n, self.n))
 
     def generate(self, n=None):
         if not n:

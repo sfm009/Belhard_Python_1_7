@@ -19,7 +19,6 @@
 import random
 
 
-
 class RandSequence:
     n: int
     sequence = []

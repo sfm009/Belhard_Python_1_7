@@ -53,10 +53,10 @@ class Student:
 
 
 student_list = [Student('James', 'Lebron', 23, 5.0),
-        Student('Curry', 'Stephen', 30, 10.0),
-        Student('Durant', 'Kevin', 7, 4.0),
-        Student('Tatum', 'Jayson', 0, 8.0),
-        Student('Embiid', 'Joel', 21, 9.0)]
+                Student('Curry', 'Stephen', 30, 10.0),
+                Student('Durant', 'Kevin', 7, 4.0),
+                Student('Tatum', 'Jayson', 0, 8.0),
+                Student('Embiid', 'Joel', 21, 9.0)]
 
 print(student_list.sort(key=lambda x: x.average_score))
 print(student_list.sort(key=lambda x: x.average_score, reverse=True))
